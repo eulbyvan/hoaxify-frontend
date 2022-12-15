@@ -50,7 +50,7 @@ export class UserSignupPage extends React.Component {
                         value={this.state.displayName}
                         onChange={this.onChangeDisplayName}
                     />
-                    <label for="floatingInput">Display Name</label>
+                    <label htmlFor="floatingInput">Display Name</label>
                 </div>
                 <div className="form-floating mb-3">
                     <input
@@ -60,7 +60,7 @@ export class UserSignupPage extends React.Component {
                         value={this.state.username}
                         onChange={this.onChangeUsername}
                     />
-                    <label for="floatingInput">Username</label>
+                    <label htmlFor="floatingInput">Username</label>
                 </div>
                 <div className="form-floating mb-3">
                     <input
@@ -71,7 +71,7 @@ export class UserSignupPage extends React.Component {
                         value={this.state.password}
                         onChange={this.onChangePassword}
                     />
-                    <label for="floatingInput">Password</label>
+                    <label htmlFor="floatingInput">Password</label>
                 </div>
                 <div className="form-floating mb-3">
                     <input
@@ -82,7 +82,7 @@ export class UserSignupPage extends React.Component {
                         value={this.state.passwordRepeat}
                         onChange={this.onChangePasswordRepeat}
                     />
-                    <label for="floatingInput">Confirm Password</label>
+                    <label htmlFor="floatingInput">Confirm Password</label>
                 </div>
                 <div className="text-center"><button className="btn btn-primary" onClick={this.onClickSignup}>Sign Up</button></div>
             </div>
