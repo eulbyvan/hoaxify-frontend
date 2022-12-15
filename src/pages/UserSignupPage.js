@@ -40,13 +40,51 @@ export class UserSignupPage extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Sign Up</h1>
-                <div><input placeholder="Your display name" value={this.state.displayName} onChange={this.onChangeDisplayName} /></div>
-                <div><input placeholder="Your username" value={this.state.username} onChange={this.onChangeUsername} /></div>
-                <div><input placeholder="Your password" type="password" value={this.state.password} onChange={this.onChangePassword} /></div>
-                <div><input placeholder="Repeat your password" type="password" value={this.state.passwordRepeat} onChange={this.onChangePasswordRepeat} /></div>
-                <div><button onClick={this.onClickSignup}>Sign Up</button></div>
+            <div className="container">
+                <h1 className="text-center">Sign Up</h1>
+                <div className="form-floating mb-3">
+                    <input
+                        id="floatingInput"
+                        className="form-control"
+                        placeholder="Your display name"
+                        value={this.state.displayName}
+                        onChange={this.onChangeDisplayName}
+                    />
+                    <label for="floatingInput">Display Name</label>
+                </div>
+                <div className="form-floating mb-3">
+                    <input
+                        id="floatingInput"
+                        className="form-control"
+                        placeholder="Your username"
+                        value={this.state.username}
+                        onChange={this.onChangeUsername}
+                    />
+                    <label for="floatingInput">Username</label>
+                </div>
+                <div className="form-floating mb-3">
+                    <input
+                        id="floatingInput"
+                        className="form-control"
+                        placeholder="Your password"
+                        type="password"
+                        value={this.state.password}
+                        onChange={this.onChangePassword}
+                    />
+                    <label for="floatingInput">Password</label>
+                </div>
+                <div className="form-floating mb-3">
+                    <input
+                        id="floatingInput"
+                        className="form-control"
+                        placeholder="Repeat your password"
+                        type="password"
+                        value={this.state.passwordRepeat}
+                        onChange={this.onChangePasswordRepeat}
+                    />
+                    <label for="floatingInput">Confirm Password</label>
+                </div>
+                <div className="text-center"><button className="btn btn-primary" onClick={this.onClickSignup}>Sign Up</button></div>
             </div>
         );
     }
